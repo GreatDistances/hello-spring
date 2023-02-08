@@ -29,7 +29,8 @@ public class HelloController {
     // Handles requests of the form /hello?name=LaunchCode
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
     public String helloWithQueryParam(@RequestParam String name) {
-        return "Hello, " + name + "!";
+        return "hello";
+        //return "Hello, " + name + "!";
     }
 
     // Handles requests of the form /hello/LaunchCode
@@ -120,6 +121,3 @@ public class HelloController {
                 "</html>";
     }
 */
-
-
-}
